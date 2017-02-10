@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using sqlite3 loadable extensions on GoMix</title>
+    <meta name="description" content="Using sqlite3 loadable extensions on GoMix">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    
+    sqlite3 does not come with a lot of functions but can load extensions.
+    This is a bit tricky to configure on GoMix so here's an example.
+    
+    <pre>SELECT power(2,8) = <span id="result"></span></pre>
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+
+    <script>
+    $(function() {
+      $.get('/pow', function(res) {
+        $('#result').text(res.x);
+      });
+    });
+    </script>
+
+  </body>
+</html>
