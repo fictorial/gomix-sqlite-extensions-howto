@@ -1,10 +1,7 @@
 {
-	"//1": "describes your app and its dependencies",
-	"//2": "https://docs.npmjs.com/files/package.json",
-	"//3": "updating this file will download and update your packages",
-	"name": "my-gomix-app",
+	"name": "gomix-sqlite3-extensions-howto",
 	"version": "0.0.1",
-	"description": "What am I about?",
+	"description": "A demo of using sqlite3 extensions on gomix",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
@@ -18,11 +15,12 @@
 		"node": "6.9.1"
 	},
 	"repository": {
-		"url": "https://gomix.com/#!/project/welcome-project"
+		"url": "https://github.com/fictorial/gomix-sqlite-extensions-howto"
 	},
 	"keywords": [
 		"node",
 		"gomix",
-		"express"
+		"sqlite",
+    "extensions"
 	]
 }
