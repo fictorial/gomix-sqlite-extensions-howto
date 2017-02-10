@@ -2,7 +2,7 @@ A demo of using sqlite3 extensions on gomix
 
 - You need to know which version of sqlite is installed.
 - You need to know the OS architecture as well.
-- see /versions for those.
+- see [/config](https://gomix.com/#!/project/gomix-sqlite3-extensions-howto/config) for those.
 
 With this, you can build SQLite extensions on some equivalent server.
 
