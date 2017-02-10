@@ -6,11 +6,11 @@ A demo of using sqlite3 extensions on gomix
 
 With this, you can build SQLite extensions on some equivalent server.
 
-- Get a Linux droplet with the same architecture.
+- Get a x86-64 Linux droplet on Digital Ocean for example (match the arch from /config).
 - Login as root.
-- apt install build-essential tclsh tcl-dev
+- `apt install build-essential tclsh tcl-dev`
 - Download sqlite source code for the same version. E.g. for 3.15.0
-  - cd /tmp
+  - `cd /tmp`
   - `wget -Osqlite.tar.gz 'http://www.sqlite.org/cgi/src/tarball/SQLite-70787558.tar.gz?uuid=707875582fcba352b4906a595ad89198d84711d8'`
   - `tar xzvf sqlite.tar.gz`
   - `cd SQLite-70787558`
